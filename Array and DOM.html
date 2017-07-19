@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- get an input from the user inthe HTLM-->
+<p id = "input"> </p>
+	<script type="text/javascript">
+	// declare varible fruit
+		var fruit = ['apple ','orange ','kiwi '];
+		//add a new fruit at the end of the array
+		fruit.push(prompt('add new fruit'))
+		//remove the first element of the array
+		fruit.shift();
+		//organizecd the elements in order
+		fruit.sort();
+		// display the elements in the web page
+		document.getElementById("input").innerHTML = fruit.join(' with ');
+		
+		
+
+		
+	</script>
+
+</body>
+</html>
