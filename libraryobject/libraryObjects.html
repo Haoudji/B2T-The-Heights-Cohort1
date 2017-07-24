@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var library = [
+		{author: 'Bill Gates', title: 'The Road Ahead', readindStatus: true},
+		{author: 'Steve Jobs', title: 'Walter Isaacson', readindStatus: true},
+		{author: 'Bill Gates', title: 'Mockingjay: The Final Book of Hunger Games', readindStatus: false},
+
+		];
+		for (var i = 0; i < library.length; i++) {
+		if(library[i].readindStatus ==true){
+			console.log("Already read "+ library[i].title+ " By "+ library[i].author)
+
+		}else{
+			console.log("You still need to read "+ library[i].title+ " By "+ library[i].author)
+
+		}
+	}
+
+	</script>
+
+</body>
+</html>

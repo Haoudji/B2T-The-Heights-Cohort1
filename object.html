@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/*var baby = {
+		name: "David", 
+		age: 2,
+		favFoods: ['Gerber', 'Formula', 'Peas', 'Boogers'],
+		cry: function(){
+			console.log("WAAAHHH")
+
+		}
+	};
+	console.log("My baby is named "+ baby.name)
+	console.log("His age is "+ baby.age)
+	console.log("one of his fav food is "+ baby.favFoods[1])
+	baby.cry();*/
+	var books = [
+		{title: "50 Shades", author: "El James", rating: 0},
+		{title: "To kill a MockingBird", author: "Harper Lee", rating: 5},
+		{title: "Juiced", author: "Jose Canseco", rating: 3}
+
+	];
+	/*for(var i = 0; i< books.length; i++){
+		console.log("My fav books are "+ books[i].title+ " By "+ books[i].author)
+
+	}*/
+	for (var i = 0; i < books.length; i++) {
+		if(books[i].rating < 3){
+			console.log("I don't recommend this book "+ books[i].title+ " By "+ books[i].author)
+
+		}else{
+			console.log("I do recommend this book "+ books[i].title+ " By "+ books[i].author)
+
+		}
+	}
+
+</script>
+
+</body>
+</html>
