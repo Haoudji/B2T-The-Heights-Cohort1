@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var grade = [80,77,88,95,68];
+	var sum = grade[0]+grade[1]+grade[2]+grade[3]+grade[4];
+
+	var average = sum/grade.length
+	if (average < 60){
+			console.log("your grade in letter is: F")
+		} else if (average >= 60 && average <= 70){
+			console.log("your grade in letter is: D")	
+		} else if(average > 70 && average <= 79){
+			console.log("your grade in letter is: C")
+		}else if (average > 79 && average <= 89 ){
+			console.log(" Good,your grade in letter is: B")}
+	else if(average > 89 && average <= 100){
+			console.log("Congratulation,your grade in letter is: A")
+		}
+</script>
+</body>
+</html>
