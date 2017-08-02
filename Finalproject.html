@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This My Final Project</title>
+</head>
+<body>
+	<h2>I would like to take this opportunity to thank The Knowledge House and the Washington Heigths Workforce1 </h2>
+	<h3>This project is about Blackjack card game</h3>
+	<p>Dealer:</p>
+	<p id ="card1"></p> 
+	<p>Your Hand:</p>
+	<p id ="card2"></p>
+	<p id ="display"></p>
+	<form>
+		 <input type="button" value=" start" onclick="getStarted()" style="background-color: red">
+		 <input type="button" value="Hit" style="background-color: green">
+		 <input type="button" value="stay" style="background-color: orange">
+		 Raise bet: <input type="number" value="100">
+	</form>
+	<script type="text/javascript">
+		var deck =  ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+
+		function getStarted(){
+
+			var dist = parseInt(Math.random()*deck.length);
+			var dist1 = parseInt(Math.random()*deck.length);
+			var dist2 = parseInt(Math.random()*deck.length);
+			var dist3 = parseInt(Math.random()*deck.length);
+
+			document.getElementById("card1").innerHTML = deck[dist]+ ", "+deck[dist1];
+		    document.getElementById("card2").innerHTML = deck[dist2]+ ", "+deck[dist3];
+
+		  
+			
+		}
+
+		var evaluate = function (){
+			var pHand = document.getElementById("card2").innerHTML.split(", ");
+
+		    for(i = 0; i < pHand.length; i++){
+		    	if(sum = 21){
+		    		document.getElementById("display").innerHTML = "Congrat You Won Mr. Dealer";
+		    	}else if(sum1 = 21){
+		    		document.getElementById("display").innerHTML = "Congrat You Won Mr. Player";
+
+		    	}else{
+		    		document.getElementById("display").innerHTML = "you want to hit or stay?";
+		    	}
+
+		    }
+		    return evaluate();
+		}
+		    
+
+		/*function hit(){
+			var ran = parseInt(Math.random()*deck.length);
+			document.getElementById("card2").innerHTML += deck[ran]+ " ,";
+
+			} */
+			
+	
+	</script>
+	
+		
+
+</body>
+</html>
